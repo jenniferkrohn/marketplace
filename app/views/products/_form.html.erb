@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field invisible">
     <%= f.label :seller_id %><br>
     <%= f.select(:seller_id, @sellers.collect {|s| [ s.name, s.id ] }, {:include_blank => 'Please select a seller'}) %>
   </div>
